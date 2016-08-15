@@ -2,7 +2,7 @@
 
 One Second Dash is a bit of code to react to Amazon Dash buttons, designed for the Raspberry Pi.
 
-To use One Second Dash, associate your Dash with a unique network SSID, for a network that does not exist. One Second Dash works by placing your WiFi interface in monitor mode and listening for probe requests for a special SSID (via tcpdump). This reacts much faster (&lt;1 second) than the technique of monitoring ARP requests, because the Dash does not need to join the network first.
+To use One Second Dash, you associate your Dash with a unique network SSID, for a network that does not exist. One Second Dash works by placing your WiFi interface in monitor mode and listening for probe requests for a special SSID (via tcpdump). This reacts much faster (&lt;1 second) than the technique of monitoring ARP requests, because the Dash does not need to join the network first.
 
 One Second Dash also has the advantage that your Dash buttons do not join your network and need not be given its password.
 
@@ -22,7 +22,7 @@ One Second Dash is made available under the very permissive Zlib license. The ch
 
 This tutorial assumes you also want to have your RPi on your normal WiFi network. This requires two dongles, since monitor mode displaces managed mode. If you are happy using Ethernet, things are a little simpler.
 
-1. Get an network dongle that supports monitor mode. Be careful with the chipset: RT5370 works, RTL8188CUS does not.
+1. Get a network dongle that supports monitor mode. Be careful with the chipset: RT5370 works, RTL8188CUS does not.
 2. Install stuff:
 
         sudo apt-get update
