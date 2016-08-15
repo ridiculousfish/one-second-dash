@@ -15,14 +15,14 @@ One Second Dash is made available under the very permissive Zlib license. The ch
 1. Think of a unique WiFi SSID. If there's another network with the same SSID nearby, you'll get spurious presses, so don't do that.
 2. Temporarily configure a router to create a network with that SSID. It can be a hidden network. If your home router has a guest network feature, that's ideal.
 3. Check what channel it's on. We'll need that later!
-4. Go through the Dash button setup with this netwrork. Stop at the final step, before you choose what to buy.
+4. Go through the Dash button setup with this network. Stop at the final step, before you choose what to buy.
 5. Nix the network. It's no longer necessary!
 
 #### Raspberry Pi Setup
 
 This tutorial assumes you also want to have your RPi on your normal WiFi network. This requires two dongles, since monitor mode displaces managed mode. If you are happy using Ethernet, things are a little simpler.
 
-1. Get and network dongle that supports monitor mode. Be careful with the chipset: RT5370 works, RTL8188CUS does not.
+1. Get an network dongle that supports monitor mode. Be careful with the chipset: RT5370 works, RTL8188CUS does not.
 2. Install stuff:
 
         sudo apt-get update
@@ -70,3 +70,5 @@ This tutorial assumes you also want to have your RPi on your normal WiFi network
 1. To make the doorbell script run at boot, you can edit `/etc/rc.local` file to invoke `start.sh` (before exit 0):
 
         sudo -u pi /home/pi/one-second-dash/start.sh > /var/log/doorbell.log &
+
+**Happy Dashing!**
