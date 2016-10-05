@@ -27,7 +27,7 @@ This tutorial assumes you also want to have your RPi on your normal WiFi network
 
         sudo apt-get update
 		sudo apt-get install iw tcpdump
-		sudo apt-get alsaplayer alsaplayer-text # if you want it to play a sound
+		sudo apt-get install alsaplayer alsaplayer-text # if you want it to play a sound
 
 3. If you are using two dongles, we need to be able to tell them apart. We do this by looking at the _capabilities_ according to `iw phy`. Run `iw phy` and look for a field like `Capabilities:`. Figure out which one corresponds to your monitor dongle and write that down, for example, `Capabilities: 0x1862`
     
