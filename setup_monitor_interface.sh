@@ -15,7 +15,7 @@ CHANNEL=$1
 CAP_FIELD=$2
 
 PHYIDX=""
-for IDX in $(seq 10); do
+for IDX in $(seq 0 10); do
   if iw phy phy$IDX info | grep -q "$CAP_FIELD" 2>/dev/null; then
     PHYIDX=$IDX
     break
